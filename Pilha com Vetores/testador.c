@@ -1,44 +1,44 @@
 #include <stdio.h>
-#include "pilhacmvetor.h"
+#include "pilhacomvetor.h"
 
 int main()
 {
 
-    Pilha* p = cria_pilha();
+    Pilha* p = criaPilha();
 
-    imprime_pilha(p);
+    imprimePilha(p);
 
-    Pessoa* pessoa1= inicializaItem(10.24);
-    Pessoa* pessoa2= inicializaItem(50.55);
-    Pessoa* pessoa3= inicializaItem(20.0);
-    Pessoa* pessoa4= inicializaItem(48);
-    Pessoa* pessoa5= inicializaItem(19);
-    Pessoa* pessoa6= inicializaItem(100.1);
-    Pessoa* pessoa7= inicializaItem(97.3);
-    Pessoa* pessoa8= inicializaItem(1.23);
-    Pessoa* pessoa9= inicializaItem(3.14);
-    Pessoa* pessoa10= inicializaItem(74.91);
-    Pessoa* pessoa11= inicializaItem(24.24);
+    Item* item1= inicializaItem(10.24);
+    Item* item2= inicializaItem(50.55);
+    Item* item3= inicializaItem(20.0);
+    Item* item4= inicializaItem(48);
+    Item* item5= inicializaItem(19);
+    Item* item6= inicializaItem(100.1);
+    Item* item7= inicializaItem(97.3);
+    Item* item8= inicializaItem(1.23);
+    Item* item9= inicializaItem(3.14);
+    Item* item10= inicializaItem(74.91);
+    Item* item11= inicializaItem(24.24);
 
-    pushPilha(pessoa1, p);
-    pushPilha(pessoa2, p);
-    pushPilha(pessoa3, p);
-    pushPilha(pessoa4, p);
-    pushPilha(pessoa5, p);
-    pushPilha(pessoa6, p);
-    pushPilha(pessoa7, p);
-    pushPilha(pessoa8, p);
-    pushPilha(pessoa9, p);
-    pushPilha(pessoa10, p);
-    pushPilha(pessoa11, p);
+    pushPilha(p, item1);
+    pushPilha(p, item2);
+    pushPilha(p, item3);
+    pushPilha(p, item4);
+    pushPilha(p, item5);
+    pushPilha(p, item6);
+    pushPilha(p, item7);
+    pushPilha(p, item8);
+    pushPilha(p, item9);
+    pushPilha(p, item10);
+    pushPilha(p, item11);
 
     printf ("---------- Imprime pilha-----------\n");
-    imprime_pilha(p);
+    imprimePilha(p);
 
-    Pessoa* retirado = popPilha(p);
+    Item* retirado = popPilha(p);
 
-    imprime_pilha(p);
+    imprimePilha(p);
 
-    p = destroi_pilha(p);
+    liberaPilha(p);
 
 }
