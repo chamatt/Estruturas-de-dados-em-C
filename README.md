@@ -3,8 +3,8 @@ Implementando Estruturas de Dados em C.
 
 ##### Estruturas Implementadas:
 - Lista encadeada simples (sem sentinela)
-##### Estruturas a serem implementadas:
 - Lista encadeada com sentinela.
+##### Estruturas a serem implementadas:
 - Lista Heterogênia (com tipos diferentes em cada célula).
 - Pilha (com vetores)
 - Pilha (com lista encadeada)
