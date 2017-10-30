@@ -13,7 +13,8 @@ void liberaItem(Item* i);
 
 
 Lista* criaLista();
-Lista* insereLista(Lista* l, Item* i);
+Lista* insereListaInicio(Lista* l, Item* i);
+Lista* insereListaFim(Lista* l, Item* i);
 Item* retiraLista(Lista* l, Item* i);
 void imprimeLista(Lista* l);
 int vaziaLista(Lista* l);
